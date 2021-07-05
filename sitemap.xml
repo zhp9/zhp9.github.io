@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zhp9.github.io/posts/0.html</loc>
+    <loc>https://zhp9.github.io/posts/7a46f93c.html</loc>
     
     <lastmod>2021-07-05</lastmod>
     
@@ -72,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/archives/index.html</loc>
+    <loc>https://zhp9.github.io/about/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/about/index.html</loc>
+    <loc>https://zhp9.github.io/archives/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
+    <loc>https://zhp9.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB/index.html</loc>
+    <loc>https://zhp9.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
+    <loc>https://zhp9.github.io/List/galleries/%E4%B9%96%E5%B7%A7%E5%B0%8F%E7%8B%97/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zhp9.github.io/List/galleries/%E4%B9%96%E5%B7%A7%E5%B0%8F%E7%8B%97/index.html</loc>
+    <loc>https://zhp9.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
     
     <lastmod>2021-06-30</lastmod>
     
@@ -234,10 +234,31 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://zhp9.github.io/tags/408/</loc>
+    <lastmod>2021-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhp9.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2021-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://zhp9.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/</loc>
+    <lastmod>2021-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhp9.github.io/categories/408-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
