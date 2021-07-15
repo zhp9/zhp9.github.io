@@ -6,7 +6,7 @@
   <link href="https://zhp9.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhp9.github.io/"/>
-  <updated>2021-07-02T08:22:55.014Z</updated>
+  <updated>2021-07-15T05:44:04.756Z</updated>
   <id>https://zhp9.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java String:字符串常量池</title>
+    <link href="https://zhp9.github.io/posts/67c36978.html"/>
+    <id>https://zhp9.github.io/posts/67c36978.html</id>
+    <published>2021-07-15T05:39:10.000Z</published>
+    <updated>2021-07-15T05:44:04.756Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-String-字符串常量池"><a href="#Java-String-字符串常量池" class="headerlink" title="Java String:字符串常量池"></a>Java String:字符串常量池</h1><p>基础的引用数据类型;</p><p>java设计者为String提供字符串常量池以提高其性能</p><p>现在就来讲讲字符串常量池吧</p><h2 id="1-字符串常量池的具体原理是什么"><a href="#1-字符串常量池的具体原理是什么" class="headerlink" title="1.字符串常量池的具体原理是什么?"></a>1.字符串常量池的具体原理是什么?</h2><h2 id="2-字符串常量池的设计思想是什么"><a href="#2-字符串常量池的设计思想是什么" class="headerlink" title="2.字符串常量池的设计思想是什么?"></a>2.字符串常量池的设计思想是什么?</h2><p>a.字符串的分配,和其他的对象分配一样,耗费高昂的时间和空间代价,作为最基础的数据类型,大量频繁的创建字符串,极大程度的影响程序的性能.</p><p>b.JVM为了提高性能和减少内存开销,在实例字符串常量的时候进行了一些优化</p><ul><li><p>为字符串开辟一个字符串常量池,类似缓存区</p></li><li><p>创建字符串常量时,首先坚持字符串常量池是否存在该字符串,存在的话返回引用实例,不存在,实例该字符串并放入池中</p><p>1.实现的基础</p><ul><li><p>实现该优化的基础是因为字符串是不可变的，可以不用担心数据冲突进行共享</p></li><li><p>运行时实例创建的全局字符串常量池中有一个表，总是为池中每个唯一的字符串对象维护一个引用,这就意味着它们一直引用着字符串常量池中的对象，所以，在常量池中的这些字符串不会被垃圾收集器回收</p><p>代码：从字符串常量池中获取相应的字符串</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> s1 <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span><span class="token comment">//原来不存在，实例化该字符串并且放入常量池</span><span class="token class-name">String</span> ss <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span><span class="token comment">//字符串常量池中含有，返回“hello”的引用实例</span><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"s1 == ss :"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>s1 <span class="token operator">==</span> ss<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul></li></ul><h2 id="3-字符串常量池在哪里"><a href="#3-字符串常量池在哪里" class="headerlink" title="3.字符串常量池在哪里?"></a>3.字符串常量池在哪里?</h2><p>首先先了解一下堆，栈，方法区</p><p><strong><em>\</em>堆区**</strong>:<br>1.存储的全部是对象，每个对象都包含一个与之对应的class的信息。(class的目的是得到操作指令)<br>2.jvm只有一个堆区(heap)被所有线程共享，堆中不存放基本类型和对象引用，只存放对象本身</p><p>对象的由垃圾回收器负责回收，因此大小和生命周期不需要确定</p><p><strong><em>栈区</em></strong>:<br>1.每个线程包含一个栈区，栈中只保存基础数据类型的对象和自定义对象的引用(不是对象)，对象都存放在堆区中<br>2.每个栈中的数据(原始类型和对象引用)都是私有的，其他栈不能访问。<br>3.栈分为3个部分：基本类型变量区、执行环境上下文、操作指令区(存放操作指令)。<br><strong><em>\</em>方法区**</strong>:<br>1.又叫静态区，跟堆一样，被所有的线程共享。方法区包含所有的class和static变量。<br>2.方法区中包含的都是在整个程序中永远唯一的元素，如class，static变量。</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/java_img/java_07_Sting/image-20210715124848127.png"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/java_img/java_07_Sting/image-20210715124823189.png"></p><p>具体实例：</p><p><strong>String str = new String(“abc”) 创建多少个对象？</strong></p><ol><li><p>在<strong>常量池中</strong>查找是否有“abc”对象</p></li><li><ul><li>有则返回对应的引用实例</li><li>没有则创建对应的实例对象</li></ul></li><li><p>在<strong>堆中</strong> new 一个 String(“abc”) 对象</p></li><li><p>将对象地址赋值给str,创建一个引用</p></li></ol><p>所以，常量池中没有“abc”字面量则创建两个对象，否则创建一个对象。以及创建一个引用</p><p><strong>String str1 = new String(“A”+”B”) ; 会创建多少个对象?</strong><br><strong>String str2 = new String(“ABC”) + “ABC” ; 会创建多少个对象?</strong></p><p>str1：<br>字符串常量池：”A”,”B”,”AB” : 3个<br>堆：new String(“AB”) ：1个<br>引用：str1 ：1个<br>总共 ：5个</p><p>str2 ：<br>字符串常量池：”ABC” : 1个<br>堆：new String(“ABC”) ：1个<br>引用：str2 ：1个<br>总共 ：3个</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="JAVA 基础阶段" scheme="https://zhp9.github.io/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/"/>
+    
+    
+    <category term="JAVA" scheme="https://zhp9.github.io/tags/JAVA/"/>
+    
+    <category term="基础阶段" scheme="https://zhp9.github.io/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>开源搭建教程</title>

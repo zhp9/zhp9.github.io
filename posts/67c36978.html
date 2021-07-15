@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ZHP 计算机 软件工程 JAVA后端">
+    <meta name="keywords" content="Java String:字符串常量池, ZHP 计算机 软件工程 JAVA后端">
     <meta name="description" content="本科 | 软件工程 | JAVA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ZHP</title>
+    <title>Java String:字符串常量池 | ZHP</title>
 
     <link rel="icon" type="image/jpeg" href="https://static01.imgkr.com/temp/8be487af27f24bca88e52922a1b42f15.jpg">
 
@@ -510,12 +510,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Java String:字符串常量池</h1>
                 </div>
             </div>
         </div>
@@ -634,12 +634,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA/">
+                                <span class="chip bg-color">JAVA</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                <span class="chip bg-color">基础阶段</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                JAVA 基础阶段
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -648,28 +665,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-07-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-07-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5
+                    926
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -687,7 +704,55 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                google-site-verification: google110e5e5e14c8dcf0.html
+                <h1 id="Java-String-字符串常量池"><a href="#Java-String-字符串常量池" class="headerlink" title="Java String:字符串常量池"></a>Java String:字符串常量池</h1><p>基础的引用数据类型;</p>
+<p>java设计者为String提供字符串常量池以提高其性能</p>
+<p>现在就来讲讲字符串常量池吧</p>
+<h2 id="1-字符串常量池的具体原理是什么"><a href="#1-字符串常量池的具体原理是什么" class="headerlink" title="1.字符串常量池的具体原理是什么?"></a>1.字符串常量池的具体原理是什么?</h2><h2 id="2-字符串常量池的设计思想是什么"><a href="#2-字符串常量池的设计思想是什么" class="headerlink" title="2.字符串常量池的设计思想是什么?"></a>2.字符串常量池的设计思想是什么?</h2><p>a.字符串的分配,和其他的对象分配一样,耗费高昂的时间和空间代价,作为最基础的数据类型,大量频繁的创建字符串,极大程度的影响程序的性能.</p>
+<p>b.JVM为了提高性能和减少内存开销,在实例字符串常量的时候进行了一些优化</p>
+<ul>
+<li><p>为字符串开辟一个字符串常量池,类似缓存区</p>
+</li>
+<li><p>创建字符串常量时,首先坚持字符串常量池是否存在该字符串,存在的话返回引用实例,不存在,实例该字符串并放入池中</p>
+<p>1.实现的基础</p>
+<ul>
+<li><p>实现该优化的基础是因为字符串是不可变的，可以不用担心数据冲突进行共享</p>
+</li>
+<li><p>运行时实例创建的全局字符串常量池中有一个表，总是为池中每个唯一的字符串对象维护一个引用,这就意味着它们一直引用着字符串常量池中的对象，所以，在常量池中的这些字符串不会被垃圾收集器回收</p>
+<p>代码：从字符串常量池中获取相应的字符串</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> s1 <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span><span class="token comment">//原来不存在，实例化该字符串并且放入常量池</span>
+<span class="token class-name">String</span> ss <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span><span class="token comment">//字符串常量池中含有，返回“hello”的引用实例</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"s1 == ss :"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>s1 <span class="token operator">==</span> ss<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-字符串常量池在哪里"><a href="#3-字符串常量池在哪里" class="headerlink" title="3.字符串常量池在哪里?"></a>3.字符串常量池在哪里?</h2><p>首先先了解一下堆，栈，方法区</p>
+<p><strong><em>\</em>堆区**</strong>:<br>1.存储的全部是对象，每个对象都包含一个与之对应的class的信息。(class的目的是得到操作指令)<br>2.jvm只有一个堆区(heap)被所有线程共享，堆中不存放基本类型和对象引用，只存放对象本身</p>
+<p>对象的由垃圾回收器负责回收，因此大小和生命周期不需要确定</p>
+<p><strong><em>栈区</em></strong>:<br>1.每个线程包含一个栈区，栈中只保存基础数据类型的对象和自定义对象的引用(不是对象)，对象都存放在堆区中<br>2.每个栈中的数据(原始类型和对象引用)都是私有的，其他栈不能访问。<br>3.栈分为3个部分：基本类型变量区、执行环境上下文、操作指令区(存放操作指令)。<br><strong><em>\</em>方法区**</strong>:<br>1.又叫静态区，跟堆一样，被所有的线程共享。方法区包含所有的class和static变量。<br>2.方法区中包含的都是在整个程序中永远唯一的元素，如class，static变量。</p>
+<p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/java_img/java_07_Sting/image-20210715124848127.png"></p>
+<p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/java_img/java_07_Sting/image-20210715124823189.png"></p>
+<p>具体实例：</p>
+<p><strong>String str = new String(“abc”) 创建多少个对象？</strong></p>
+<ol>
+<li><p>在<strong>常量池中</strong>查找是否有“abc”对象</p>
+</li>
+<li><ul>
+<li>有则返回对应的引用实例</li>
+<li>没有则创建对应的实例对象</li>
+</ul>
+</li>
+<li><p>在<strong>堆中</strong> new 一个 String(“abc”) 对象</p>
+</li>
+<li><p>将对象地址赋值给str,创建一个引用</p>
+</li>
+</ol>
+<p>所以，常量池中没有“abc”字面量则创建两个对象，否则创建一个对象。以及创建一个引用</p>
+<p><strong>String str1 = new String(“A”+”B”) ; 会创建多少个对象?</strong><br><strong>String str2 = new String(“ABC”) + “ABC” ; 会创建多少个对象?</strong></p>
+<p>str1：<br>字符串常量池：”A”,”B”,”AB” : 3个<br>堆：new String(“AB”) ：1个<br>引用：str1 ：1个<br>总共 ：5个</p>
+<p>str2 ：<br>字符串常量池：”ABC” : 1个<br>堆：new String(“ABC”) ：1个<br>引用：str2 ：1个<br>总共 ：3个</p>
+
                 
             </div>
             <hr/>
@@ -713,7 +778,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhp9.github.io/google1xxxxxxx0.html">https://zhp9.github.io/google1xxxxxxx0.html</a>
+                    <a href="https://zhp9.github.io/posts/67c36978.html">https://zhp9.github.io/posts/67c36978.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -750,7 +815,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/JAVA/">
+                                    <span class="chip bg-color">JAVA</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                    <span class="chip bg-color">基础阶段</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1225,34 +1298,50 @@ new Valine({
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/67c36978.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg" class="responsive-img" alt="Java String:字符串常量池">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Java String:字符串常量池</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            学好String对于java内存机制能有更深的了解
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-15
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZHP
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                    JAVA 基础阶段
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                        <span class="chip bg-color">基础阶段</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1260,37 +1349,52 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/d74d8b76.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021853.jpg" class="responsive-img" alt="开源搭建教程">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">开源搭建教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            	生活总是起伏跌荡，在这变迁的岁月里，人生没有如果，只有后果和结果，过去的不再回来，回来的不再完美。没有过不去的坎，只有过不去的人。慢慢地，不再流泪；慢慢地，一切都会过去。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZHP
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo-blog-lucky/">
+                        <span class="chip bg-color">hexo-blog-lucky</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">博客搭建教程</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
