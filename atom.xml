@@ -6,7 +6,7 @@
   <link href="https://zhp9.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhp9.github.io/"/>
-  <updated>2021-07-17T05:12:09.299Z</updated>
+  <updated>2021-07-17T06:36:29.071Z</updated>
   <id>https://zhp9.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://zhp9.github.io/posts/2e7e0051.html"/>
     <id>https://zhp9.github.io/posts/2e7e0051.html</id>
     <published>2021-07-17T05:09:16.000Z</published>
-    <updated>2021-07-17T05:12:09.299Z</updated>
+    <updated>2021-07-17T06:36:29.071Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="外接屏幕闪烁解决方法"><a href="#外接屏幕闪烁解决方法" class="headerlink" title="外接屏幕闪烁解决方法"></a>外接屏幕闪烁解决方法</h1><h2 id="一、屏幕分辨率设置（配置）"><a href="#一、屏幕分辨率设置（配置）" class="headerlink" title="一、屏幕分辨率设置（配置）"></a>一、屏幕分辨率设置（配置）</h2><h3 id="1、开始按钮—-gt-设置-组合快捷键：Win-I-Fn-F9-进入win10系统设置。"><a href="#1、开始按钮—-gt-设置-组合快捷键：Win-I-Fn-F9-进入win10系统设置。" class="headerlink" title="1、开始按钮—>设置(组合快捷键：Win+I/Fn+F9 进入win10系统设置。)"></a>1、开始按钮—&gt;设置(组合快捷键：Win+I/Fn+F9 进入win10系统设置。)</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123329286.png"></p><h3 id="2、左键单击”系统”（显示、声音、通知、电源）选项-或者“搜索框”输入字母“d”后弹出的下拉菜单—-gt-显示设置"><a href="#2、左键单击”系统”（显示、声音、通知、电源）选项-或者“搜索框”输入字母“d”后弹出的下拉菜单—-gt-显示设置" class="headerlink" title="2、左键单击”系统”（显示、声音、通知、电源）选项(或者“搜索框”输入字母“d”后弹出的下拉菜单—>显示设置)"></a>2、左键单击”系统”（显示、声音、通知、电源）选项(或者“搜索框”输入字母“d”后弹出的下拉菜单—&gt;显示设置)</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123519156.png"></p><h3 id="3、显示—-gt-高级显示设置"><a href="#3、显示—-gt-高级显示设置" class="headerlink" title="3、显示—>高级显示设置"></a>3、显示—&gt;高级显示设置</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123743388.png"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123843559.png"></p><h3 id="4-进入外接显示屏适配器"><a href="#4-进入外接显示屏适配器" class="headerlink" title="4.进入外接显示屏适配器"></a>4.进入外接显示屏适配器</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717124152352.png"></p><h3 id="5-修改刷新频率与电脑一致"><a href="#5-修改刷新频率与电脑一致" class="headerlink" title="5.修改刷新频率与电脑一致"></a>5.修改刷新频率与电脑一致</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717124620046.png"></p><h2 id="二、修改屏幕分辨率（配置）"><a href="#二、修改屏幕分辨率（配置）" class="headerlink" title="二、修改屏幕分辨率（配置）"></a>二、修改屏幕分辨率（配置）</h2><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717125438178.png"></p><h2 id="三、硬件排查："><a href="#三、硬件排查：" class="headerlink" title="三、硬件排查："></a>三、硬件排查：</h2><h2 id="1-将外接显示屏连接其他主机（排查外接显示器）"><a href="#1-将外接显示屏连接其他主机（排查外接显示器）" class="headerlink" title="1.将外接显示屏连接其他主机（排查外接显示器）"></a>1.将外接显示屏连接其他主机（排查外接显示器）</h2><h2 id="2-排查线路（插拔你使用的HDMI线或者VGA线）"><a href="#2-排查线路（插拔你使用的HDMI线或者VGA线）" class="headerlink" title="2.排查线路（插拔你使用的HDMI线或者VGA线）"></a>2.排查线路（插拔你使用的HDMI线或者VGA线）</h2><h3 id="3-排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）"><a href="#3-排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）" class="headerlink" title="3.排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）"></a>3.排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）</h3><p>如果出现硬件问题，该买的还得买</p><h2 id="如有帮助，不胜荣幸！"><a href="#如有帮助，不胜荣幸！" class="headerlink" title="如有帮助，不胜荣幸！"></a>如有帮助，不胜荣幸！</h2>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="外接屏幕闪烁解决方法"><a href="#外接屏幕闪烁解决方法" class="headerlink" title="外接屏幕闪烁解决方法"></a>外接屏幕闪烁解决方法</h1><h2 id="一、屏幕分辨率设置（配置）"><a href="#一、屏幕分辨率设置（配置）" class="headerlink" title="一、屏幕分辨率设置（配置）"></a>一、屏幕分辨率设置（配置）</h2><h3 id="1、开始按钮—-gt-设置-组合快捷键：Win-I-Fn-F9-进入win10系统设置。"><a href="#1、开始按钮—-gt-设置-组合快捷键：Win-I-Fn-F9-进入win10系统设置。" class="headerlink" title="1、开始按钮—>设置(组合快捷键：Win+I/Fn+F9 进入win10系统设置。)"></a>1、开始按钮—&gt;设置(组合快捷键：Win+I/Fn+F9 进入win10系统设置。)</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123329286.png"></p><h3 id="2、左键单击”系统”（显示、声音、通知、电源）选项-或者“搜索框”输入字母“d”后弹出的下拉菜单—-gt-显示设置"><a href="#2、左键单击”系统”（显示、声音、通知、电源）选项-或者“搜索框”输入字母“d”后弹出的下拉菜单—-gt-显示设置" class="headerlink" title="2、左键单击”系统”（显示、声音、通知、电源）选项(或者“搜索框”输入字母“d”后弹出的下拉菜单—>显示设置)"></a>2、左键单击”系统”（显示、声音、通知、电源）选项(或者“搜索框”输入字母“d”后弹出的下拉菜单—&gt;显示设置)</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123519156.png"></p><h3 id="3、显示—-gt-高级显示设置"><a href="#3、显示—-gt-高级显示设置" class="headerlink" title="3、显示—>高级显示设置"></a>3、显示—&gt;高级显示设置</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123743388.png"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717123843559.png"></p><h3 id="4-进入外接显示屏适配器"><a href="#4-进入外接显示屏适配器" class="headerlink" title="4.进入外接显示屏适配器"></a>4.进入外接显示屏适配器</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717124152352.png"></p><h3 id="5-修改刷新频率与电脑一致"><a href="#5-修改刷新频率与电脑一致" class="headerlink" title="5.修改刷新频率与电脑一致"></a>5.修改刷新频率与电脑一致</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717124620046.png"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717143612299.png"></p><h2 id="二、修改屏幕分辨率（配置）"><a href="#二、修改屏幕分辨率（配置）" class="headerlink" title="二、修改屏幕分辨率（配置）"></a>二、修改屏幕分辨率（配置）</h2><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/computer/problem/image-20210717125438178.png"></p><h2 id="三、硬件排查："><a href="#三、硬件排查：" class="headerlink" title="三、硬件排查："></a>三、硬件排查：</h2><h2 id="1-将外接显示屏连接其他主机（排查外接显示器）"><a href="#1-将外接显示屏连接其他主机（排查外接显示器）" class="headerlink" title="1.将外接显示屏连接其他主机（排查外接显示器）"></a>1.将外接显示屏连接其他主机（排查外接显示器）</h2><h2 id="2-排查线路（插拔你使用的HDMI线或者VGA线）"><a href="#2-排查线路（插拔你使用的HDMI线或者VGA线）" class="headerlink" title="2.排查线路（插拔你使用的HDMI线或者VGA线）"></a>2.排查线路（插拔你使用的HDMI线或者VGA线）</h2><h3 id="3-排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）"><a href="#3-排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）" class="headerlink" title="3.排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）"></a>3.排除同一插排影响，外接显示器和电脑电源分开（拔出电脑电源，使用电脑电池）</h3><p>如果出现硬件问题，该买的还得买</p><h2 id="如有帮助，不胜荣幸！"><a href="#如有帮助，不胜荣幸！" class="headerlink" title="如有帮助，不胜荣幸！"></a>如有帮助，不胜荣幸！</h2>]]></content>
     
     
       
@@ -121,37 +121,11 @@
   </entry>
   
   <entry>
-    <title>开源搭建教程</title>
-    <link href="https://zhp9.github.io/posts/d74d8b76.html"/>
-    <id>https://zhp9.github.io/posts/d74d8b76.html</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-07-02T08:22:55.014Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="博客篇" scheme="https://zhp9.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
-    
-    
-    <category term="hexo-blog-lucky" scheme="https://zhp9.github.io/tags/hexo-blog-lucky/"/>
-    
-    <category term="博客搭建教程" scheme="https://zhp9.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>计算机网络原理</title>
     <link href="https://zhp9.github.io/posts/7a46f93c.html"/>
     <id>https://zhp9.github.io/posts/7a46f93c.html</id>
-    <published>2020-03-14T16:00:00.000Z</published>
-    <updated>2021-07-05T13:16:33.950Z</updated>
+    <published>2021-07-01T16:00:00.000Z</published>
+    <updated>2021-07-18T00:31:59.261Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算机网络–第一章"><a href="#计算机网络–第一章" class="headerlink" title="计算机网络–第一章"></a>计算机网络–第一章</h1><h2 id="导图"><a href="#导图" class="headerlink" title="导图"></a>导图</h2><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704160806081.png" alt="导图"></p><h2 id="1-1计算机网络概述"><a href="#1-1计算机网络概述" class="headerlink" title="1.1计算机网络概述"></a>1.1计算机网络概述</h2><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704165159068.png" alt="脑图"></p><h3 id="1-1-1概念"><a href="#1-1-1概念" class="headerlink" title="1.1.1概念"></a>1.1.1概念</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704161639882.png" alt="计算机网络的概念"></p><h3 id="1-1-2计算机网络的功能"><a href="#1-1-2计算机网络的功能" class="headerlink" title="1.1.2计算机网络的功能"></a>1.1.2计算机网络的功能</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704162058009.png" alt="计算机网络的功能"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704162914322.png" alt="因特网发展阶段"></p><h3 id="1-1-3计算机的组成和分类"><a href="#1-1-3计算机的组成和分类" class="headerlink" title="1.1.3计算机的组成和分类"></a>1.1.3计算机的组成和分类</h3><h4 id="1-计算机网络的组成部分"><a href="#1-计算机网络的组成部分" class="headerlink" title="1.计算机网络的组成部分"></a>1.计算机网络的组成部分<img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704163451749.png" alt="计算机网络的组成部分"></h4><h4 id="2-计算机网络的工作方式"><a href="#2-计算机网络的工作方式" class="headerlink" title="2.计算机网络的工作方式"></a>2.计算机网络的工作方式</h4><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704164116607.png" alt="计算机网络的组成"></p><p>​            </p><h4 id="3-功能组成"><a href="#3-功能组成" class="headerlink" title="3.功能组成"></a>3.功能组成</h4><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704164331741.png" alt="计算机网络的组成"></p><h4 id="4-计算机网络的分类"><a href="#4-计算机网络的分类" class="headerlink" title="4.计算机网络的分类"></a>4.计算机网络的分类</h4><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210704165026410.png" alt="计算机网络的分类"></p><h3 id="1-1-4标准化工作"><a href="#1-1-4标准化工作" class="headerlink" title="1.1.4标准化工作"></a>1.1.4标准化工作</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705071616609.png" alt="标准娿工作"></p><h3 id="1-1-5性能指标"><a href="#1-1-5性能指标" class="headerlink" title="1.1.5性能指标"></a>1.1.5性能指标</h3><p>1、速率</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705072720386.png" alt="速率"></p><p>2、带宽</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705073946536.png" alt="带宽"></p><p>3.吞吐量</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705074506837.png" alt="吞吐量"></p><p>4.时延</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705075914364.png" alt="时延"></p><p>5.时延带宽积</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705080211877.png" alt="时延带宽"></p><p>6.往返时延RTT</p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705080528198.png" alt="往返时延"></p><p>7、利用率<img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705080743646.png" alt="利用率"></p><h2 id="1-2-体系结构-amp-参考模型"><a href="#1-2-体系结构-amp-参考模型" class="headerlink" title="1.2 体系结构&amp;参考模型"></a>1.2 体系结构&amp;参考模型</h2><h3 id="1-2-1-分层结构、协议、接口、服务"><a href="#1-2-1-分层结构、协议、接口、服务" class="headerlink" title="1.2.1    分层结构、协议、接口、服务"></a>1.2.1    分层结构、协议、接口、服务</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705082522423.png" alt="分层结构"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705083224980.png"></p><h3 id="1-2-2-IOS-OSI模型"><a href="#1-2-2-IOS-OSI模型" class="headerlink" title="1.2.2    IOS/OSI模型"></a>1.2.2    IOS/OSI模型</h3><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705083718067.png" alt="OSI七层模型"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705152309237.png" alt="应用层"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705152507399.png" alt="表示层"></p><p><img src="https://gitee.com/zheng-haiping/img_manage/raw/master/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/image-20210705184846707.png" alt="会话层"></p><h3 id="1-2-3-TCP-IP协议"><a href="#1-2-3-TCP-IP协议" class="headerlink" title="1.2.3    TCP/IP协议"></a>1.2.3    TCP/IP协议</h3>]]></content>
     
@@ -169,6 +143,32 @@
     <category term="408" scheme="https://zhp9.github.io/tags/408/"/>
     
     <category term="计算机网络原理" scheme="https://zhp9.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源搭建教程</title>
+    <link href="https://zhp9.github.io/posts/d74d8b76.html"/>
+    <id>https://zhp9.github.io/posts/d74d8b76.html</id>
+    <published>2021-06-30T16:00:00.000Z</published>
+    <updated>2021-07-18T00:31:39.564Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="博客篇" scheme="https://zhp9.github.io/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/"/>
+    
+    
+    <category term="hexo-blog-lucky" scheme="https://zhp9.github.io/tags/hexo-blog-lucky/"/>
+    
+    <category term="博客搭建教程" scheme="https://zhp9.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
