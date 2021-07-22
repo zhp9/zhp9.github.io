@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ZHP 计算机 软件工程 JAVA后端">
+    <meta name="keywords" content="Java用Calender类型打印日历详解, ZHP 计算机 软件工程 JAVA后端">
     <meta name="description" content="本科 | 软件工程 | JAVA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ZHP</title>
+    <title>Java用Calender类型打印日历详解 | ZHP</title>
 
     <link rel="icon" type="image/jpeg" href="https://static01.imgkr.com/temp/8be487af27f24bca88e52922a1b42f15.jpg">
 
@@ -510,12 +510,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013627.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Java用Calender类型打印日历详解</h1>
                 </div>
             </div>
         </div>
@@ -634,12 +634,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA/">
+                                <span class="chip bg-color">JAVA</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                <span class="chip bg-color">基础阶段</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                JAVA 基础阶段
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -648,21 +665,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-07-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5
+                    339
                 </div>
                 
 
@@ -687,7 +704,44 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                google-site-verification: google110e5e5e14c8dcf0.html
+                <h1 id="Java用Calender类型，打印日历详解"><a href="#Java用Calender类型，打印日历详解" class="headerlink" title="Java用Calender类型，打印日历详解"></a>Java用Calender类型，打印日历详解</h1><p>首先我们要明白：</p>
+<p>   1.系统的每个星期的第一天是星期日</p>
+<ol start="2">
+<li>Calendar calendar = Calendar.getInstance();返回calender抽象类的子类对象（这里用到了多态）</li>
+<li>返回的weekday需要减1才是中国的星期</li>
+<li>月份也是如此，我们所使用的是1-12月，但是系统是0-11月，返回时需要减1</li>
+<li>计算每个月第一天是星期几，打印空格个数根据自己需要的格式打印</li>
+</ol>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>ping<span class="token punctuation">.</span>demo02<span class="token punctuation">.</span>homework</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xpath<span class="token punctuation">.</span>internal<span class="token punctuation">.</span></span><span class="token class-name">SourceTree</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Calendar</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyTest</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Calendar</span> calendar <span class="token operator">=</span> <span class="token class-name">Calendar</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Scanner</span> sc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"请输入想要查询的月份: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> month <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">2021</span><span class="token punctuation">,</span> month <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t星期日"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> weekday <span class="token operator">=</span> calendar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Calendar</span><span class="token punctuation">.</span>DAY_OF_WEEK<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//系统在时间为一个星期的第五天，实际上是星期4</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> weekday <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//打印前面三天的空格</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"\t \t"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token punctuation">;</span> calendar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Calendar</span><span class="token punctuation">.</span>MONTH<span class="token punctuation">)</span> <span class="token operator">==</span> month <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token comment">//从第一天开始遍历</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" "</span> <span class="token operator">+</span> calendar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Calendar</span><span class="token punctuation">.</span>DAY_OF_MONTH<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\t \t"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            calendar<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Calendar</span><span class="token punctuation">.</span>DAY_OF_MONTH<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">//碰到周日要换行，为第一天1</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>calendar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Calendar</span><span class="token punctuation">.</span>DAY_OF_WEEK <span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>          <span class="token comment">//但是经过加1的操作，则在2的时候换行</span>
+                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -713,7 +767,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhp9.github.io/google1xxxxxxx0.html">https://zhp9.github.io/google1xxxxxxx0.html</a>
+                    <a href="https://zhp9.github.io/posts/3acd4d3c.html">https://zhp9.github.io/posts/3acd4d3c.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -750,7 +804,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/JAVA/">
+                                    <span class="chip bg-color">JAVA</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                    <span class="chip bg-color">基础阶段</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1225,34 +1287,50 @@ new Valine({
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/3acd4d3c.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013627.jpg" class="responsive-img" alt="Java用Calender类型打印日历详解">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Java用Calender类型打印日历详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            加强Calender类
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZHP
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                    JAVA 基础阶段
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                        <span class="chip bg-color">基础阶段</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1260,37 +1338,52 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/619157b.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013346.png" class="responsive-img" alt="设计模式-第一篇">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">设计模式-第一篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            利用设计模式加深对java的了解
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZHP
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                    JAVA 基础阶段
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
