@@ -40,9 +40,9 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="ZHP" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="ZHP" type="application/atom+xml">
 </head>
 
 
@@ -634,12 +634,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA/">
+                                <span class="chip bg-color">JAVA</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                <span class="chip bg-color">基础阶段</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                JAVA 基础阶段
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -648,21 +665,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-01
+                    2021-08-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-01
+                    2021-08-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    514
                 </div>
                 
 
@@ -687,7 +704,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="DNS的定义和选择"><a href="#DNS的定义和选择" class="headerlink" title="DNS的定义和选择"></a>DNS的定义和选择</h1><h2 id="一、DNS定义"><a href="#一、DNS定义" class="headerlink" title="一、DNS定义"></a>一、DNS定义</h2><p>DNS：计算机域名系统（Dmain Name System 或 Domain Name Service）的缩写，它是由<strong>域名解析器和域名服务器</strong>组成的，它是由域名解析器和域名服务器组成的。域名服务器是指<strong>保存有该网络种所有主机的域名和对应IP地址，并具有将域名转化为IP地址功能的服务器</strong>。其中域名必须对于一个IP地址，一个IP地址可以有多个域名，而IP地址不一定有域名。域名系统采用类似目录树的等级结构。域名服务器透彻为客户机/服务器模式中的服务器方，它主要有两种服务器：主服务器和转发服务器。将域名映射为IP地址的过程就称为“域名解析”。</p>
+<h2 id="二、如何选择DNS"><a href="#二、如何选择DNS" class="headerlink" title="二、如何选择DNS"></a>二、如何选择DNS</h2><h3 id="先了解一下DNS的基本情况"><a href="#先了解一下DNS的基本情况" class="headerlink" title="先了解一下DNS的基本情况"></a>先了解一下DNS的基本情况</h3><p>百度DNS：服务器地址：180.76.76.76 它的特点是云解析，提供云防护，无劫持，更精准的服务。</p>
+<p>阿里DNS：服务器地址：223.5.5.5 和 223.6.6.6 它的特点是稳定，快速，智能</p>
+<p>114DNS：服务器地址：114.114.114.114 它的特点是高速，稳定，可靠，无劫持</p>
+<p>有以下服务器可以选择</p>
+<p>有以下DNS可选：114DNS、阿里DNS、百度DNS、谷歌、OpenDNS等，其中114DNS、阿里DNS、百度DNS的节点都遍布全国各省份和地区，电信、联通、移动、教育网都有节点分布，具体分布可查阅官网。谷歌DNS、OpenDNS在国内并没有节点分布，国内用户使用的均为香港节点。</p>
+<p>以下附加DNS解析地址：</p>
+<p>114DNS： 114.114.114.114、114.114.115.115  阿里DNS： 223.5.5.5、223.6.6.6  百度DNS：180.76.76.76  谷歌DNS： 8.8.8.8、8.8.4.4  OpenDNS： 208.67.220.220、208.67.222.222  建议大陆用户首选114DNS，延迟率低，如果想访问国外网站，以及国外有服务器等建议考虑谷歌DNS。</p>
+
                 
             </div>
             <hr/>
@@ -750,7 +775,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/JAVA/">
+                                    <span class="chip bg-color">JAVA</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                                    <span class="chip bg-color">基础阶段</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1220,39 +1253,53 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/b02a4af0.html">
+                <a href="/posts/bbcf5ff7.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013251.png" class="responsive-img" alt="DNS的定义和选择">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021038.jpg" class="responsive-img" alt="Lambda表达式">
                         
-                        <span class="card-title">DNS的定义和选择</span>
+                        <span class="card-title">Lambda表达式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Lambda表达式
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            ZHP
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA-%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/" class="post-category">
+                                    JAVA 基础阶段
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E9%98%B6%E6%AE%B5/">
+                        <span class="chip bg-color">基础阶段</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1542,7 +1589,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.8k</span>&nbsp;字
+                class="white-color">8.1k</span>&nbsp;字
             
             
             
